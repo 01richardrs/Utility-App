@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:visibility="invisible"/>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            tools:ignore="WebViewLayout">
+
+          <WebView
+              android:id="@+id/mywebview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+          </WebView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS Status:  "
+                />
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/loc_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online/Offline"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Region :  "
+                />
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/loc_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Region"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City :  "
+                />
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/loc_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude: "
+                />
+            <TextView
+                android:textSize="22dp"
+                android:id="@+id/loc_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking GPS Status..."
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longtitude: "
+                />
+            <TextView
+                android:textSize="22dp"
+                android:id="@+id/loc_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking GPS Status..."
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address : "
+                />
+            <TextView
+                android:textSize="22dp"
+                android:id="@+id/loc_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking GPS Status..."
+                />
+        </LinearLayout>
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#E9F2F2"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/batons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            />
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="#E9F2F2"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/gomap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search In Google Map"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".battery">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:visibility="invisible"/>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/pics"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Status:  "
+                />
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/bat_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging?"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Tech: "
+                />
+            <TextView
+                android:textSize="22dp"
+                android:id="@+id/bat_tech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaa"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Percentage :  "
+                />
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/bat_perc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Healhy :  "
+                />
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/bat_health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Healthy"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Size: "
+                />
+            <TextView
+                android:textSize="22dp"
+                android:id="@+id/bat_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3000 mAh"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Temperature : "
+                />
+            <TextView
+                android:textSize="22dp"
+                android:id="@+id/bat_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online/Offline"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
