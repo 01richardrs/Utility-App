@@ -71,7 +71,7 @@ public class network extends Fragment {
             }
         };
 
-        handler.postDelayed(runnable, 1500);
+        handler.postDelayed(runnable, 500);
 
 
         batons.setOnClickListener(new View.OnClickListener() {

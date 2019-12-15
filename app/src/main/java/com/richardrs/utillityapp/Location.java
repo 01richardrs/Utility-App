@@ -66,7 +66,7 @@ public class Location extends Fragment {
             }
         };
 
-        handler.postDelayed(runnable, 2000);
+        handler.postDelayed(runnable, 1000);
 
         final LocationListener listener = new LocationListener() {
             @Override
