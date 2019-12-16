@@ -148,7 +148,7 @@
         </LinearLayout>
 
         <Button
-            android:background="@color/colorPrimary"
+            android:background="@drawable/button_shape"
             android:textColor="#E9F2F2"
             android:textAlignment="center"
             android:layout_gravity="center"

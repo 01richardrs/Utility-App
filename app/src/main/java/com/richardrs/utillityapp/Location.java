@@ -84,7 +84,7 @@ public class Location extends Fragment {
                 Loc_x.setText(Double.toString(lon));
                 Loc_y.setText(Double.toString(lat));
 
-                Geocoder gCoder = new Geocoder(getContext());
+                Geocoder gCoder = new Geocoder(mContext);
                 ArrayList<Address> addresses = null;
                 try {
                     addresses = (ArrayList<Address>) gCoder.getFromLocation(lat,lon,1);
