@@ -10,8 +10,11 @@ import android.os.Handler;
 import android.provider.Settings;
 import android.text.method.TextKeyListener;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.sql.Time;
 import java.text.SimpleDateFormat;
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
 
+        //ImageView gifpic = (ImageView) findViewById(R.id.awans);
         TextView model = (TextView) findViewById(R.id.modell);
         TextView devname = (TextView) findViewById(R.id.textView3);
         final TextView time = (TextView) findViewById(R.id.tiem);
@@ -57,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
 
         String name = Settings.Secure.getString(getContentResolver(), "bluetooth_name");
         devname.setText("Welcome "+name);
+
+        //Glide.with(this)
+          //      .load(R.drawable.awancuk).asGif().animate(R.drawable.awancuk)
+          //      .into(gifpic);
 
         netwoks.setOnClickListener(new View.OnClickListener() {
             @Override
