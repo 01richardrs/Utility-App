@@ -36,6 +36,14 @@ public class Location extends Fragment {
     Handler handler = new Handler();
     Runnable runnable;
     double lat,lon;
+    private static Context mContext;
+
+    @Override
+    public void onAttach(Context context){
+        super.onAttach(context);
+        mContext=context;
+    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,7 +62,7 @@ public class Location extends Fragment {
         final TextView Loc_y = (TextView) convertView.findViewById(R.id.loc_y);
         final TextView Loc_s = (TextView) convertView.findViewById(R.id.loc_s);
 
-        final LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+        final LocationManager locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
         Criteria criteria = new Criteria();
         final String Provider = locationManager.getBestProvider(criteria,false);
 
@@ -109,7 +117,7 @@ public class Location extends Fragment {
 
             @Override
             public void onProviderDisabled(String provider) {
-                Toast.makeText(getContext(), "Please Turn on GPS", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "Please Turn on GPS", Toast.LENGTH_SHORT).show();
                 Loc_x.setText("Not Found");
                 Loc_y.setText("Not Found");
                 Loc.setText("Offline");
@@ -129,7 +137,7 @@ public class Location extends Fragment {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
-                if (getActivity().checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && getActivity().checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                if (mContext.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && mContext.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.INTERNET}
                                 ,10);
@@ -151,11 +159,11 @@ public class Location extends Fragment {
             @Override
             public void onClick(View v) {
                 if (lat == 0 || lon ==0 ){
-                    Toast.makeText(getContext(), "Gps Not found. Please Try Again", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "Gps Not found. Please Try Again", Toast.LENGTH_SHORT).show();
                 }else{
                 String uri = String.format(Locale.ENGLISH, "geo:0,0?q=", lat, lon);
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                getContext().startActivity(intent);
+                mContext.startActivity(intent);
                 }
             }
         });

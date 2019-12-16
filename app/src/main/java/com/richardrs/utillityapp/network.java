@@ -30,6 +30,14 @@ public class network extends Fragment {
     TelephonyManager mTelephonyManager;
     network.MyPhoneStateListener myPhoneStateListener;
     int mSignalStrength;
+    private static Context mContext;
+
+    @Override
+    public void onAttach(Context context){
+        super.onAttach(context);
+        mContext=context;
+    }
+
 
 
     private static boolean isAirplaneModeOn(Context context) {
@@ -61,7 +69,7 @@ public class network extends Fragment {
         final View convertView = inflater.inflate(R.layout.fragment_network, container, false);
         final Button batons = (Button) convertView.findViewById(R.id.batons);
         myPhoneStateListener =  new MyPhoneStateListener();
-        mTelephonyManager = (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
+        mTelephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
         mTelephonyManager.listen(myPhoneStateListener, PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
 
         runnable = new Runnable() {
@@ -87,8 +95,8 @@ public class network extends Fragment {
 
                                       @Override
                                       public void onClick(View v) {
-                                          ConnectivityManager connectivityManager = (ConnectivityManager)getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-                                          WifiManager wifiManager = (WifiManager)getActivity().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+                                          ConnectivityManager connectivityManager = (ConnectivityManager)mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
+                                          WifiManager wifiManager = (WifiManager)mContext.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
                                           WifiInfo wifiInfo = wifiManager.getConnectionInfo();
                                           int numberOfLevels = 6;
                                           int level = wifiManager.calculateSignalLevel(wifiInfo.getRssi(),numberOfLevels);
@@ -175,7 +183,7 @@ public class network extends Fragment {
                                               Net_strength.setText("No Signal.");
                                               DL_speed.setText(""+(downSpeed)+"Mbs");
                                               UP_speed.setText(""+(upSpeed)+"Mbs");
-                                              if (isAirplaneModeOn(getContext()) == true){
+                                              if (isAirplaneModeOn(mContext) == true){
                                                   Net_pic.setImageResource(R.drawable.plane);
                                                   Netw.setText("Airplane Mode.");
                                               }

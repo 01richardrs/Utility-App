@@ -23,6 +23,13 @@ import static android.content.Context.BATTERY_SERVICE;
 public class battery extends Fragment {
     Handler handler = new Handler();
     Runnable runnable;
+    private static Context mContext;
+
+    @Override
+    public void onAttach(Context context){
+        super.onAttach(context);
+        mContext=context;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,13 +62,13 @@ public class battery extends Fragment {
             @Override
             public void onClick(View v) {
                 IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-                 Intent batteryStat = getContext().registerReceiver(null,ifilter);
-                 BatteryManager bm = (BatteryManager)getActivity().getSystemService(BATTERY_SERVICE);
+                 Intent batteryStat = mContext.registerReceiver(null,ifilter);
+                 BatteryManager bm = (BatteryManager)mContext.getSystemService(BATTERY_SERVICE);
 
                 int level = batteryStat.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
                 int status = batteryStat.getIntExtra(BatteryManager.EXTRA_STATUS,-1);
                 int chargePlug = batteryStat.getIntExtra(BatteryManager.EXTRA_PLUGGED,-1);
-                double batteryCapacity = getBatteryCapacity(getContext());
+                double batteryCapacity = getBatteryCapacity(mContext);
                 boolean isCharge = status == BatteryManager.BATTERY_STATUS_CHARGING || status == BatteryManager.BATTERY_STATUS_FULL;
                 boolean usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
                 boolean acCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_AC;
@@ -69,7 +76,7 @@ public class battery extends Fragment {
                 String tech = batteryStat.getStringExtra(BatteryManager.EXTRA_TECHNOLOGY);
                 String Bat_lev = Integer.toString(level);
                 String bat_cap = Double.toString(batteryCapacity);
-                String temp = batteryTemperature(getContext());
+                String temp = batteryTemperature(mContext);
 
                 bat_tek.setText(tech);
                 bat_perc.setText(Bat_lev+" %");
@@ -154,7 +161,7 @@ public class battery extends Fragment {
     }
     public static String batteryTemperature(Context context)
     {
-        Intent intent = context.registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+        Intent intent = mContext.registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
         float  temp   = ((float) intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE,0)) / 10;
 
         return String.valueOf(temp) + "C";
