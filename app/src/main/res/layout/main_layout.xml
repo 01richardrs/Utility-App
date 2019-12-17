@@ -30,14 +30,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/awans"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="180dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/reserved"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.13"-->
-<!--        tools:layout_editor_absoluteX="10dp" />-->
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/awancuk"
+        app:layout_constraintBottom_toBottomOf="@+id/reserved"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        tools:layout_editor_absoluteX="10dp" />
 
     <TextView
         android:id="@+id/modell"
@@ -80,6 +80,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date"
         app:layout_constraintVertical_bias="0.85" />
+
+    <ImageView
+        android:id="@+id/tiempic"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:src="@drawable/morn"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

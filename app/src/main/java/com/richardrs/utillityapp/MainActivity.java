@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 
 import java.sql.Time;
 import java.text.SimpleDateFormat;
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
 
-        //ImageView gifpic = (ImageView) findViewById(R.id.awans);
+        final ImageView tiempic = (ImageView) findViewById(R.id.tiempic);
         TextView model = (TextView) findViewById(R.id.modell);
         TextView devname = (TextView) findViewById(R.id.textView3);
         final TextView time = (TextView) findViewById(R.id.tiem);
@@ -48,6 +47,24 @@ public class MainActivity extends AppCompatActivity {
                 String currenDay = new SimpleDateFormat("EEEE", Locale.getDefault()).format(new Date());
                 time.setText(currentTime);
                 dat.setText(currenDay+","+currentDate);
+
+                Calendar c = Calendar.getInstance();
+                int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
+
+                if(timeOfDay >= 0 && timeOfDay < 3){
+                    tiempic.setImageResource(R.drawable.night2);
+                } else if(timeOfDay >= 3 && timeOfDay < 6){
+                    tiempic.setImageResource(R.drawable.night3);
+                } else if(timeOfDay >= 6 && timeOfDay < 12){
+                    tiempic.setImageResource(R.drawable.morn);
+                }else if(timeOfDay >= 12 && timeOfDay < 16){
+                    tiempic.setImageResource(R.drawable.aftnun);
+                }else if(timeOfDay >= 16 && timeOfDay < 21){
+                    tiempic.setImageResource(R.drawable.nun);
+                }else if(timeOfDay >= 21 && timeOfDay < 24){
+                    tiempic.setImageResource(R.drawable.night1);
+                }
+
                 handler.postDelayed(runnable, 900);
             }
         };
