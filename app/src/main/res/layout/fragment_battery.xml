@@ -59,7 +59,7 @@
                 android:id="@+id/bat_tech"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="aaa"
+                android:text="Lithium"
                 />
         </LinearLayout>
         <LinearLayout
@@ -148,6 +148,8 @@
         </LinearLayout>
 
         <Button
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
             android:background="@drawable/button_shape"
             android:textColor="#E9F2F2"
             android:textAlignment="center"

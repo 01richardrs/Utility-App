@@ -83,8 +83,8 @@
 
     <ImageView
         android:id="@+id/tiempic"
-        android:layout_width="120dp"
-        android:layout_height="70dp"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
         android:src="@drawable/morn"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"

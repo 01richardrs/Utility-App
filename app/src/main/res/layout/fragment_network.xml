@@ -134,6 +134,8 @@
     </LinearLayout>
 
     <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
         android:background="@drawable/button_shape"
         android:textColor="#E9F2F2"
         android:textAlignment="center"
@@ -153,8 +155,8 @@
         android:paddingTop="8dp">
     <Button
                 android:gravity="center"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:background="@drawable/button_shape"
                 android:textColor="#E9F2F2"
                 android:textAlignment="center"
@@ -175,8 +177,8 @@
             android:paddingTop="6dp">
             <Button
                 android:gravity="center"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:background="@drawable/button_shape"
                 android:textColor="#E9F2F2"
                 android:textAlignment="center"
