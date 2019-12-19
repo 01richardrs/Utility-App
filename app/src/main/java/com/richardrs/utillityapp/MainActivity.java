@@ -14,13 +14,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity {
     Handler handler = new Handler();
@@ -79,9 +76,6 @@ public class MainActivity extends AppCompatActivity {
         String name = Settings.Secure.getString(getContentResolver(), "bluetooth_name");
         devname.setText("Welcome "+name);
 
-        //Glide.with(this)
-          //      .load(R.drawable.awancuk).asGif().animate(R.drawable.awancuk)
-          //      .into(gifpic);
 
         netwoks.setOnClickListener(new View.OnClickListener() {
             @Override
