@@ -15,13 +15,14 @@
         android:roundIcon="@drawable/logohh"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Container"
-            android:screenOrientation="portrait"
-            ></activity>
+        <activity android:name=".Color_Setting"></activity>
+        <activity
+            android:name=".Container"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Splashscreen"
-            android:theme="@style/Splash"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +31,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

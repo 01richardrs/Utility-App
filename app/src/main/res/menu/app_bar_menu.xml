@@ -5,6 +5,7 @@
     app:showAsAction ="always"
     >
     <item
+        android:onClick="dothis()"
         android:title=""
         android:id="@+id/item1"
         android:icon="@drawable/set"
