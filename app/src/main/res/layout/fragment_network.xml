@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
+            android:id="@+id/nettxt"
             android:textSize="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +46,6 @@
             android:text="Mobile / Wifi"
             />
     </LinearLayout>
-
     <LinearLayout
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -54,6 +54,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
+            android:id="@+id/stattxt"
             android:textSize="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,6 +76,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
+            android:id="@+id/strengh"
             android:textSize="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,6 +98,7 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/dltxt"
             android:textSize="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,6 +123,7 @@
 
         <TextView
             android:textSize="25dp"
+            android:id="@+id/uptxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Upload Speed:  "

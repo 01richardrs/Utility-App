@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Container">
+    tools:context=".Container"
+    android:id="@+id/backgroundd">
     <androidx.appcompat.widget.Toolbar
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,7 +14,6 @@
         app:titleTextColor="#FFF"
         android:layout_height="?attr/actionBarSize"
         android:background="#42A5F5"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:id="@+id/toolBar"
         tools:ignore="MissingConstraints" />

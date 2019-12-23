@@ -1,9 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Color_Setting">
+    tools:context=".Color_Setting"
+    android:orientation="vertical"
+    android:id="@+id/backgrounds"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        app:titleTextColor="#FFF"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#42A5F5"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolBar"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bgtext"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background Color"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/bgcolor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtcolor"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Color"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/textcolor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnclr"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Color"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/butcolor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btntexclr"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Text Color"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/buttexcolor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25dp"
+            android:id="@+id/fchoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font Choice"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/textfont"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="25dp"
+            android:id="@+id/dmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Dark Mode "
+            />
+        <Switch
+            android:id="@+id/switcher"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/button_shape"
+                android:textColor="#E9F2F2"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:id="@+id/deaful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default Color"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/sav"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/button_shape"
+                android:textColor="#E9F2F2"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

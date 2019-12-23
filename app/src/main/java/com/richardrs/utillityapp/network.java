@@ -2,6 +2,10 @@ package com.richardrs.utillityapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.graphics.drawable.GradientDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
@@ -11,6 +15,7 @@ import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.RequiresApi;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import android.os.Handler;
 import android.provider.Settings;
@@ -23,6 +28,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.lang.reflect.Type;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class network extends Fragment {
     Handler handler = new Handler();
@@ -72,6 +81,18 @@ public class network extends Fragment {
         mTelephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
         mTelephonyManager.listen(myPhoneStateListener, PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
 
+        final TextView Netw = (TextView) convertView.findViewById(R.id.Net);
+        final TextView Netwtxt = (TextView) convertView.findViewById(R.id.nettxt);
+        final TextView Net_stat = (TextView) convertView.findViewById(R.id.Net_status);
+        final TextView Net_stattxt = (TextView) convertView.findViewById(R.id.stattxt);
+        final TextView Net_strength = (TextView) convertView.findViewById(R.id.Net_strength);
+        final TextView Net_strengthtxt = (TextView) convertView.findViewById(R.id.strengh);
+        final TextView DL_speed = (TextView) convertView.findViewById(R.id.DL_speed);
+        final TextView DL_speedtxt = (TextView) convertView.findViewById(R.id.dltxt);
+        final TextView UP_speed = (TextView) convertView.findViewById(R.id.UP_speed);
+        final TextView UP_speedtxt = (TextView) convertView.findViewById(R.id.uptxt);
+        final ImageView Net_pic = (ImageView) convertView.findViewById(R.id.pics);
+
         runnable = new Runnable() {
             public void run() {
                 batons.performClick();
@@ -83,12 +104,7 @@ public class network extends Fragment {
 
 
         batons.setOnClickListener(new View.OnClickListener() {
-                                      TextView Netw = (TextView) convertView.findViewById(R.id.Net);
-                                      TextView Net_stat = (TextView) convertView.findViewById(R.id.Net_status);
-                                      TextView Net_strength = (TextView) convertView.findViewById(R.id.Net_strength);
-                                      TextView DL_speed = (TextView) convertView.findViewById(R.id.DL_speed);
-                                      TextView UP_speed = (TextView) convertView.findViewById(R.id.UP_speed);
-                                      ImageView Net_pic = (ImageView) convertView.findViewById(R.id.pics);
+
                                       int downSpeed = 0;
                                       int upSpeed = 0;
                                       @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -212,6 +228,72 @@ public class network extends Fragment {
         });
         batons.performClick();
 
+        SharedPreferences preferences = mContext.getSharedPreferences("Pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        String hex1 = Color_translate(preferences.getInt("txtcolor",8));
+        String hex2 = Color_translate(preferences.getInt("butcolor",1));
+        String hex3 = Color_translate(preferences.getInt("buttxtcolor",4));
+        Typeface hex4 = Option_translator(preferences.getInt("font",2));
+
+        GradientDrawable shape = (GradientDrawable) batons.getBackground();
+        GradientDrawable shape2 = (GradientDrawable) Net_setting.getBackground();
+        GradientDrawable shape3 = (GradientDrawable) Wifi_setting.getBackground();
+
+        Netw.setTextColor(Color.parseColor(hex1));
+        Netwtxt.setTextColor(Color.parseColor(hex1));
+        Net_stat.setTextColor(Color.parseColor(hex1));
+        Net_stattxt.setTextColor(Color.parseColor(hex1));
+        Net_strength.setTextColor(Color.parseColor(hex1));
+        Net_strengthtxt.setTextColor(Color.parseColor(hex1));
+        DL_speed.setTextColor(Color.parseColor(hex1));
+        DL_speedtxt.setTextColor(Color.parseColor(hex1));
+        UP_speed.setTextColor(Color.parseColor(hex1));
+        UP_speedtxt.setTextColor(Color.parseColor(hex1));
+
+        shape.setColor(Color.parseColor(hex2));
+        shape2.setColor(Color.parseColor(hex2));
+        shape3.setColor(Color.parseColor(hex2));
+
+        batons.setTextColor(Color.parseColor(hex3));
+        Net_setting.setTextColor(Color.parseColor(hex3));
+        Wifi_setting.setTextColor(Color.parseColor(hex3));
+
+        Netw.setTypeface(hex4);
+        Netwtxt.setTypeface(hex4);
+        Net_stat.setTypeface(hex4);
+        Net_stattxt.setTypeface(hex4);
+        Net_strength.setTypeface(hex4);
+        Net_strengthtxt.setTypeface(hex4);
+        DL_speed.setTypeface(hex4);
+        DL_speedtxt.setTypeface(hex4);
+        UP_speed.setTypeface(hex4);
+        UP_speedtxt.setTypeface(hex4);
+
+
         return convertView;
+    }
+    public Typeface Option_translator(Integer choice){
+        Typeface options4 ;
+
+        if (choice == 0){
+            options4 = ResourcesCompat.getFont(mContext,R.font.micross);
+        }else if(choice == 1){
+            options4 = ResourcesCompat.getFont(mContext,R.font.arial);
+        }else if(choice == 2){
+            options4 = ResourcesCompat.getFont(mContext,R.font.fransisco);
+        }else{
+            options4 = ResourcesCompat.getFont(mContext,R.font.times);;
+        }
+        return  options4;
+    }
+    public String Color_translate(int choice){
+        String Hexcode = "";
+        String ColorCode[] = {"#F35D5D","#42A5F5","#5D5D5D","#F7E35B","#FFFFFF", "#78F672","#E272F6","#F98950","#000000"};
+        for(int i=0;i<=ColorCode.length;i++){
+            if (choice == i){
+                Hexcode = ColorCode[i];
+            }
+        }
+        return Hexcode;
     }
 }
