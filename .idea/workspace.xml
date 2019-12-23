@@ -40,15 +40,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/battery.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Color_Setting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="188" column="57" lean-forward="true" selection-start-line="188" selection-start-column="57" selection-end-line="188" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Option_translator#0;class#battery#0" />
-                <element signature="method#Color_translate#0;class#battery#0" />
-              </folding>
+            <state relative-caret-position="243">
+              <caret line="251" column="56" lean-forward="true" selection-start-line="251" selection-start-column="56" selection-end-line="251" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -123,7 +118,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_color__setting.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_container.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Color_Setting.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Container.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_network.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/network.java" />
@@ -131,13 +125,15 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Location.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_battery.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/battery.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Color_Setting.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="966" />
+    <option name="y" value="521" />
+    <option name="width" value="961" />
+    <option name="height" value="526" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -145,10 +141,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,7 +277,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.34354487" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.7045952" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -290,7 +286,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info id="Flutter Inspector" order="9" weight="0.32963988" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4915254" weight="0.32932165" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4915254" weight="0.33150986" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4986577" weight="0.32841823" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3297587" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
@@ -299,9 +295,8 @@
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5084746" side_tool="true" weight="0.3319672" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49798658" weight="0.3665208" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49798658" weight="0.36619717" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32932165" />
-      <window_info anchor="right" id="Assistant" weight="0.32897604" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.33474576" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -309,6 +304,7 @@
       <window_info anchor="right" id="Preview" order="4" weight="0.17724289" />
       <window_info anchor="right" id="Flutter Outline" order="5" weight="0.32825485" />
       <window_info anchor="right" id="Device File Explorer" order="6" weight="0.32963988" />
+      <window_info anchor="right" id="Assistant" order="7" weight="0.32897604" />
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -455,29 +451,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/SETTING.png" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spinner_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_dropdown.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dropdown_spinner.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="true" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spinner_item.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_dropdown.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dropdown_spinner.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/simple_spinner_dropdown.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -494,13 +470,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/test.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -509,13 +479,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spinner_highlight.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spinner_highlight.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/button_shape.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -592,17 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Color_translate#0;class#Container#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_network.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -614,19 +567,6 @@
             <element signature="e#1570#2289#0" />
             <element signature="e#3024#3702#0" />
             <element signature="e#3707#4419#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Color_Setting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3502">
-          <caret line="231" column="12" selection-start-line="231" selection-start-column="6" selection-end-line="232" selection-end-column="73" />
-          <folding>
-            <element signature="e#2546#2554#0" expanded="true" />
-            <element signature="e#1592#1600#0" expanded="true" />
-            <element signature="e#6750#7410#0" expanded="true" />
-            <element signature="e#7409#7410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -689,13 +629,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/battery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="188" column="57" lean-forward="true" selection-start-line="188" selection-start-column="57" selection-end-line="188" selection-end-column="57" />
+        <state relative-caret-position="-579">
+          <caret line="174" column="75" lean-forward="true" selection-start-line="174" selection-start-column="75" selection-end-line="174" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Option_translator#0;class#battery#0" />
             <element signature="method#Color_translate#0;class#battery#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="110" column="19" lean-forward="true" selection-start-line="101" selection-start-column="3" selection-end-line="117" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Color_translate#0;class#Container#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardrs/utillityapp/Color_Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="251" column="56" lean-forward="true" selection-start-line="251" selection-start-column="56" selection-end-line="251" selection-end-column="56" />
         </state>
       </provider>
     </entry>
