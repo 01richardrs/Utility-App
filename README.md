@@ -1,6 +1,9 @@
 # Uttility-App -  Battery,Wifi,Location Detector !
 
-<img width="200" height="800" alt="Main Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Main.jpg">
+<img width="400" height="800" alt="Main Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Main.jpg" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;>
 
 More Pictures and Video Preview  provided below.
 
@@ -27,10 +30,31 @@ All Personalization only can be applied in 3 Screen (Battery,Location,Wifi) and 
 Video Preview Link : https://github.com/01richardrs/Uttility-App/blob/master/Videopreview/UttilityApp.mp4
 
 # Screen Preview :
-<img width="200" height="800" alt="Splash Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/SplashScreen.jpg">
-<img width="200" height="800" alt="Setting Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Color%20Setting.jpg">
-<img width="200" height="800" alt="Network Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Network.jpg">
-<img width="200" height="800" alt="Battery Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Battery.jpg">
-<img width="200" height="800" alt="Location Screen" src="hhttps://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Location.jpg">
-<img width="200" height="800" alt="Dark Mode Preview" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Dark%20Mode.jpg">
-<img width="200" height="800" alt="Dark Mode Applied Preview" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/DarkMode%20apply.jpg">
+<img width="400" height="800" alt="Splash Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/SplashScreen.jpg" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;>
+<img width="400" height="800" alt="Setting Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Color%20Setting.jpg" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;>
+<img width="400" height="800" alt="Network Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Network.jpg" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;>
+<img width="400" height="800" alt="Battery Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Battery.jpg" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;>
+<img width="400" height="800" alt="Location Screen" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Location.jpg" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;>
+<img width="400" height="800" alt="Dark Mode Preview" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Dark%20Mode.jpg" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;>
+<img width="400" height="800" alt="Dark Mode Applied Preview" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/DarkMode%20apply.jpg" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;>
