@@ -1,6 +1,6 @@
 # Uttility-App -  Battery,Wifi,Location Detector !
 
-![Main Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Main.jpg)
+![Main Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Main.jpg){:height="50%" width="50%"}
 
 More Pictures and Video Preview  provided below.
 
@@ -27,11 +27,11 @@ All Personalization only can be applied in 3 Screen (Battery,Location,Wifi) and 
 Video Preview Link : https://github.com/01richardrs/Uttility-App/blob/master/Videopreview/UttilityApp.mp4
 
 # Screen Preview :
-![Splash Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/SplashScreen.jpg)
-![Setting Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Color%20Setting.jpg)
-![Network Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Network.jpg)
-![Battery Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Battery.jpg)
-![Location Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Location.jpg)
-![Dark Mode Preview](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Dark%20Mode.jpg)
-![Dark Mode Applied Preview](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/DarkMode%20apply.jpg)
+![Splash Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/SplashScreen.jpg){:height="50%" width="50%"}
+![Setting Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Color%20Setting.jpg){:height="50%" width="50%"}
+![Network Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Network.jpg){:height="50%" width="50%"}
+![Battery Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Battery.jpg){:height="50%" width="50%"}
+![Location Screen](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Location.jpg){:height="50%" width="50%"}
+![Dark Mode Preview](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Dark%20Mode.jpg){:height="50%" width="50%"}
+![Dark Mode Applied Preview](https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/DarkMode%20apply.jpg){:height="50%" width="50%"}
 
