@@ -175,7 +175,6 @@ public class Color_Setting extends AppCompatActivity {
         saves.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Color_Setting.this, Container.class);
                 SharedPreferences preferences = getSharedPreferences("Pref", MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putInt("bgcolor",bgcolor.getSelectedItemPosition());

@@ -41,7 +41,6 @@ public class Container extends AppCompatActivity {
         toolbar = findViewById(R.id.toolBar);
 
         SharedPreferences preferences = getSharedPreferences("Pref", MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
         String hex = Color_translate(preferences.getInt("bgcolor",4));
         bg.setBackgroundColor(Color.parseColor(hex));
 
