@@ -36,3 +36,8 @@ Video Preview Link : https://github.com/01richardrs/Uttility-App/blob/master/Vid
 <img width="400" height="800" alt="Dark Mode Preview" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/Dark%20Mode.jpg">
 <img width="400" height="800" alt="Dark Mode Applied Preview" src="https://github.com/01richardrs/Uttility-App/blob/master/Screen%20Preview/DarkMode%20apply.jpg">
 </p>
+
+# How to Try :
+Download .Apk files in this repository and try it out in Android Devices.
+  
+If issue occured, Please contact me.
